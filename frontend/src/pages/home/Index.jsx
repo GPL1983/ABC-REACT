@@ -5,6 +5,7 @@ import Welcome from "./welcome/Welcome";
 import Rewards from "./rewards/Rewards";
 import Vouchers from "./vouchers/Vouchers";
 import ShopDeals from "./shopdeals/ShopDeals";
+import UnlockRewards from "./unlockrewards/UnlockRewards";
 
 const HOME_API = import.meta.env.VITE_HOME_API;
 
@@ -40,11 +41,12 @@ const Index = () => {
   return (
     <>
       <HeroSlider heroSlider={heroSlider} />
-      {/* <RedemptionMenu redemptionMenu={redemptionMenu} /> */}
-      {/* <Welcome /> */}
+      <RedemptionMenu redemptionMenu={redemptionMenu} />
+      <Welcome />
       <ShopDeals shopDeals={shopDeals} />
-      {/* <Rewards rewards={rewards} /> */}
+      <Rewards rewards={rewards} />
       <Vouchers vouchers={vouchers} />
+      <UnlockRewards />
     </>
   );
 };

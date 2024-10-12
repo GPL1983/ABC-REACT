@@ -1,0 +1,13 @@
+.dvRewards {
+  background-color: #fefefe;
+}
+
+@media (min-width: 768px) {
+  .dvRewards .img-container {
+    display: none;
+  }
+  .dvRewards .bg-image {
+    background: url("/src/assets/images/homepage/reward-section/rewards.jpg") no-repeat top right;
+    background-size: contain;
+  }
+}

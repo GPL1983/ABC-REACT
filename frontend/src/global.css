@@ -8,6 +8,29 @@ body {
 }
 /*=========[ BODY ]=========*/
 
+/*=========[ NEGATIVE MARGIN ]=========*/
+.mx-n1 {
+  margin-left: -0.25rem !important;
+  margin-right: -0.25rem !important;
+}
+.mx-n2 {
+  margin-left: -0.5rem !important;
+  margin-right: -0.5rem !important;
+}
+.mx-n3 {
+  margin-left: -1rem !important;
+  margin-right: -1rem !important;
+}
+.mx-n4 {
+  margin-left: -1.5rem !important;
+  margin-right: -1.5rem !important;
+}
+.mx-n5 {
+  margin-left: -3rem !important;
+  margin-right: -3rem !important;
+}
+/*=========[ NEGATIVE MARGIN ]=========*/
+
 /*=========[ COMMON SCROLLBAR STYLE ]=========*/
 ::-webkit-scrollbar {
   width: var(--scrollbar-width);
@@ -172,13 +195,13 @@ p {
 .border-top {
   border-top: 1px solid var(--border-top-colour) !important;
 }
-.border-right {
+.border-end {
   border-right: 1px solid var(--border-right-colour) !important;
 }
 .border-bottom {
   border-bottom: 1px solid var(--border-bottom-colour) !important;
 }
-.border-left {
+.border-start {
   border-left: 1px solid var(--border-left-colour) !important;
 }
 
@@ -190,7 +213,7 @@ p {
   border-top: var(--border-none) !important;
 }
 
-.border-right-0 {
+.border-end-0 {
   border-right: var(--border-none) !important;
 }
 
@@ -198,7 +221,7 @@ p {
   border-bottom: var(--border-none) !important;
 }
 
-.border-left-0 {
+.border-start-0 {
   border-left: var(--border-none) !important;
 }
 /*=========[ BORDERS ]=========*/
@@ -834,12 +857,12 @@ p {
   width: var(--arrow-image-width);
 }
 /* swiper arrow fontawesome icons start */
-.swiper-button-prev i,
-.swiper-button-next i {
+.swiper-button-prev svg,
+.swiper-button-next svg {
   color: var(--arrow-fa-icon-text-colour);
   font-size: var(--arrow-fa-icon-size);
-  background-color: var(--arrow-fa-icon-bg-colour);
-  padding: var(--arrow-fa-icon-padding);
+  /* background-color: var(--arrow-fa-icon-bg-colour); */
+  /* padding: var(--arrow-fa-icon-padding); */
   border-radius: var(--arrow-fa-icon-b-radius);
 }
 
@@ -939,7 +962,8 @@ p {
 
 /*=========[ BUTTONS ]=========*/
 .btn.focus,
-.btn:focus {
+.btn:focus,
+.navbar-toggler:focus {
   box-shadow: none;
 }
 .btn {
@@ -2329,6 +2353,27 @@ select.form-control:focus {
 
 /*=========[ MEDIA QUERIES ]=========*/
 @media (min-width: 576px) {
+  .mx-sm-n1 {
+    margin-left: -0.25rem !important;
+    margin-right: -0.25rem !important;
+  }
+  .mx-sm-n2 {
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important;
+  }
+  .mx-sm-n3 {
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
+  }
+  .mx-sm-n4 {
+    margin-left: -1.5rem !important;
+    margin-right: -1.5rem !important;
+  }
+  .mx-sm-n5 {
+    margin-left: -3rem !important;
+    margin-right: -3rem !important;
+  }
+
   .border-sm {
     border: 1px solid var(--border-colour) !important;
   }
@@ -2337,7 +2382,7 @@ select.form-control:focus {
     border-top: 1px solid var(--border-top-colour) !important;
   }
 
-  .border-sm-right {
+  .border-sm-end {
     border-right: 1px solid var(--border-right-colour) !important;
   }
 
@@ -2345,7 +2390,7 @@ select.form-control:focus {
     border-bottom: 1px solid var(--border-bottom-colour) !important;
   }
 
-  .border-sm-left {
+  .border-sm-start {
     border-left: 1px solid var(--border-left-colour) !important;
   }
 
@@ -2357,7 +2402,7 @@ select.form-control:focus {
     border-top: var(--border-none) !important;
   }
 
-  .border-sm-right-0 {
+  .border-sm-end-0 {
     border-right: var(--border-none) !important;
   }
 
@@ -2365,7 +2410,7 @@ select.form-control:focus {
     border-bottom: var(--border-none) !important;
   }
 
-  .border-sm-left-0 {
+  .border-sm-start-0 {
     border-left: var(--border-none) !important;
   }
 
@@ -2375,6 +2420,27 @@ select.form-control:focus {
 }
 
 @media (min-width: 768px) {
+  .mx-md-n1 {
+    margin-left: -0.25rem !important;
+    margin-right: -0.25rem !important;
+  }
+  .mx-md-n2 {
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important;
+  }
+  .mx-md-n3 {
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
+  }
+  .mx-md-n4 {
+    margin-left: -1.5rem !important;
+    margin-right: -1.5rem !important;
+  }
+  .mx-md-n5 {
+    margin-left: -3rem !important;
+    margin-right: -3rem !important;
+  }
+
   .border-md {
     border: 1px solid var(--border-colour) !important;
   }
@@ -2383,7 +2449,7 @@ select.form-control:focus {
     border-top: 1px solid var(--border-top-colour) !important;
   }
 
-  .border-md-right {
+  .border-md-end {
     border-right: 1px solid var(--border-right-colour) !important;
   }
 
@@ -2391,7 +2457,7 @@ select.form-control:focus {
     border-bottom: 1px solid var(--border-bottom-colour) !important;
   }
 
-  .border-md-left {
+  .border-md-start {
     border-left: 1px solid var(--border-left-colour) !important;
   }
 
@@ -2403,7 +2469,7 @@ select.form-control:focus {
     border-top: var(--border-none) !important;
   }
 
-  .border-md-right-0 {
+  .border-md-end-0 {
     border-right: var(--border-none) !important;
   }
 
@@ -2411,12 +2477,33 @@ select.form-control:focus {
     border-bottom: var(--border-none) !important;
   }
 
-  .border-md-left-0 {
+  .border-md-start-0 {
     border-left: var(--border-none) !important;
   }
 }
 
 @media (min-width: 992px) {
+  .mx-lg-n1 {
+    margin-left: -0.25rem !important;
+    margin-right: -0.25rem !important;
+  }
+  .mx-lg-n2 {
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important;
+  }
+  .mx-lg-n3 {
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
+  }
+  .mx-lg-n4 {
+    margin-left: -1.5rem !important;
+    margin-right: -1.5rem !important;
+  }
+  .mx-lg-n5 {
+    margin-left: -3rem !important;
+    margin-right: -3rem !important;
+  }
+
   .border-lg {
     border: 1px solid var(--border-colour) !important;
   }
@@ -2425,7 +2512,7 @@ select.form-control:focus {
     border-top: 1px solid var(--border-top-colour) !important;
   }
 
-  .border-lg-right {
+  .border-lg-end {
     border-right: 1px solid var(--border-right-colour) !important;
   }
 
@@ -2433,7 +2520,7 @@ select.form-control:focus {
     border-bottom: 1px solid var(--border-bottom-colour) !important;
   }
 
-  .border-lg-left {
+  .border-lg-start {
     border-left: 1px solid var(--border-left-colour) !important;
   }
 
@@ -2445,7 +2532,7 @@ select.form-control:focus {
     border-top: var(--border-none) !important;
   }
 
-  .border-lg-right-0 {
+  .border-lg-end-0 {
     border-right: var(--border-none) !important;
   }
 
@@ -2453,7 +2540,7 @@ select.form-control:focus {
     border-bottom: var(--border-none) !important;
   }
 
-  .border-lg-left-0 {
+  .border-lg-start-0 {
     border-left: var(--border-none) !important;
   }
 
@@ -2589,6 +2676,27 @@ select.form-control:focus {
 }
 
 @media (min-width: 1200px) {
+  .mx-xl-n1 {
+    margin-left: -0.25rem !important;
+    margin-right: -0.25rem !important;
+  }
+  .mx-xl-n2 {
+    margin-left: -0.5rem !important;
+    margin-right: -0.5rem !important;
+  }
+  .mx-xl-n3 {
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
+  }
+  .mx-xl-n4 {
+    margin-left: -1.5rem !important;
+    margin-right: -1.5rem !important;
+  }
+  .mx-xl-n5 {
+    margin-left: -3rem !important;
+    margin-right: -3rem !important;
+  }
+
   .border-xl {
     border: 1px solid var(--border-colour) !important;
   }
@@ -2597,7 +2705,7 @@ select.form-control:focus {
     border-top: 1px solid var(--border-top-colour) !important;
   }
 
-  .border-xl-right {
+  .border-xl-end {
     border-right: 1px solid var(--border-right-colour) !important;
   }
 
@@ -2605,7 +2713,7 @@ select.form-control:focus {
     border-bottom: 1px solid var(--border-bottom-colour) !important;
   }
 
-  .border-xl-left {
+  .border-xl-start {
     border-left: 1px solid var(--border-left-colour) !important;
   }
 
@@ -2617,7 +2725,7 @@ select.form-control:focus {
     border-top: var(--border-none) !important;
   }
 
-  .border-xl-right-0 {
+  .border-xl-end-0 {
     border-right: var(--border-none) !important;
   }
 
@@ -2625,7 +2733,7 @@ select.form-control:focus {
     border-bottom: var(--border-none) !important;
   }
 
-  .border-xl-left-0 {
+  .border-xl-start-0 {
     border-left: var(--border-none) !important;
   }
 
