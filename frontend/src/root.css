@@ -1,0 +1,1045 @@
+@font-face {
+  font-family: FontThin;
+  src: url();
+}
+@font-face {
+  font-family: FontSemiThin;
+  src: url();
+}
+@font-face {
+  font-family: FontExtraThin;
+  src: url();
+}
+@font-face {
+  font-family: FontLight;
+  src: url(./assets/fonts/open_sans/OpenSans-Light.ttf);
+}
+@font-face {
+  font-family: FontSemiLight;
+  src: url();
+}
+@font-face {
+  font-family: FontExtraLight;
+  src: url();
+}
+@font-face {
+  font-family: FontRegular;
+  src: url(./assets/fonts/open_sans/OpenSans-Regular.ttf);
+}
+@font-face {
+  font-family: FontSemiRegular;
+  src: url();
+}
+@font-face {
+  font-family: FontExtraRegular;
+  src: url();
+}
+@font-face {
+  font-family: FontMedium;
+  src: url(./assets/fonts/open_sans/OpenSans-Medium.ttf);
+}
+@font-face {
+  font-family: FontSemiMedium;
+  src: url();
+}
+@font-face {
+  font-family: FontExtraMedium;
+  src: url();
+}
+@font-face {
+  font-family: FontBold;
+  src: url(./assets/fonts/open_sans/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: FontSemiBold;
+  src: url(./assets/fonts/open_sans/OpenSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: FontExtraBold;
+  src: url(./assets/fonts/open_sans/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+  font-family: FontBlack;
+  src: url();
+}
+@font-face {
+  font-family: FontSemiBlack;
+  src: url();
+}
+@font-face {
+  font-family: FontExtraBlack;
+  src: url();
+}
+
+:root {
+  /*fonts*/
+  --font-thin: FontThin;
+  --font-semithin: FontSemiThin;
+  --font-extrathin: FontExtraThin;
+  --font-light: FontLight;
+  --font-semilight: FontSemiLight;
+  --font-extralight: FontExtraLight;
+  --font-regular: FontRegular;
+  --font-semiregular: FontSemiRegular;
+  --font-extraregular: FontExtraRegular;
+  --font-medium: FontMedium;
+  --font-semimedium: FontSemiMedium;
+  --font-extramedium: FontExtraMedium;
+  --font-bold: FontBold;
+  --font-semibold: FontSemiBold;
+  --font-extrabold: FontExtraBold;
+  --font-black: FontBlack;
+  --font-semiblack: FontSemiBlack;
+  --font-extrablack: FontExtraBlack;
+
+  /* theme colours */
+  --colour1: #cb4f56; /*primary theme colour*/
+  --colour2: #f3f4f6; /*lightgray - use only for background*/
+  --colour3: #efefef; /*darkgray - used only for borders*/
+  --colour4: #f9f9f9; /*secondary theme colour*/
+  --colour5: #fef2f2; /*lightRed*/
+  --colour6: #ffffff; /*white - dont change this colour, is used commonly everywhere*/
+  --colour7: #000000; /*black - dont change this colour, is used commonly everywhere*/
+  --colour8: #777777; /*gray - use only for common text colours, such as paragraphs*/
+  --colour9: #000a09; /*used for heading1 and heading2*/
+
+  /*|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|- COMPONENTS |-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-|-*/
+
+  /*==================[ BODY ]==================*/
+  --body-f-family: var(--font-regular);
+  --body-font-size: 1rem;
+  --body-bg-colour: var(--colour6);
+  --body-text-colour: var(--colour8);
+
+  /*==================[ DEFAULT SCROLLBAR ]==================*/
+  --scrollbar-custom-size: 3px; /*3px*/
+  --scrollbar-width: 16px; /*16px*/
+  --scrollbar-track-bg: #f1f1f1; /*#f1f1f1*/
+  --scrollbar-thumb-bg: #c1c1c1; /*var(--colour1)*/
+
+  /*==================[ REDEMPTION MENU ]==================*/
+  --redemptionmenu-scrollbar-height: var(--scrollbar-custom-size);
+  --redemptionmenu-scrollbar-track-bg: var(--scrollbar-track-bg);
+  --redemptionmenu-scrollbar-thumb-bg: var(--scrollbar-thumb-bg);
+  /*imagebox*/
+  --redemptionmenu-imagebox-bg-colour: var(--colour6);
+  --redemptionmenu-imagebox-border-radius: 50%;
+  --redemptionmenu-imagebox-width: 80px;
+  --redemptionmenu-imagebox-height: 80px;
+  --redemptionmenu-imagebox-img-width: 35px;
+  --redemptionmenu-imagebox-img-height: 35px;
+  --redemptionmenu-imagebox-box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 5px -2px, rgba(0, 0, 0, 0.3) 0px 0px 13px -2px;
+  /*image on hover*/
+  --redemptionmenu-imagebox-bg-colour-hover: var(--colour1);
+  --redemptionmenu-imagebox-img-filter-hover: brightness(0) invert(1);
+  /*active*/
+  --redemptionmenu-imagebox-active-bg-colour: var(--colour1);
+  --redemptionmenu-imagebox-img-filter-active: brightness(0) invert(1);
+  --redemptionmenu-imagebox-active-text-font-weight: bold;
+  /*text*/
+  --redemptionmenu-imagebox-text-colour: var(--colour7);
+  --redemptionmenu-imagebox-text-font-family: var(--font-semibold);
+  --redemptionmenu-imagebox-text-font-size: 0.875rem;
+  --redemptionmenu-imagebox-text-font-weight-hover: bold;
+
+  /*==================[ PLACEHOLDERS ]==================*/
+  --placeholder-text-colour: var(--colour8);
+  --placeholder-font-size: 0.875rem;
+  --placeholder-disabled-bg-colour: #eee;
+  --placeholder-disabled-text-colour: #ccc;
+  --placeholder-disabled-font-size: 0.875rem;
+  --placeholder-disabled-opacity: 1;
+  --placeholder-disabled-cursor: not-allowed;
+  --placeholder-readonly-bg-colour: #eee;
+  --placeholder-readonly-text-colour: #ccc;
+  --placeholder-readonly-font-size: 0.875rem;
+  --placeholder-readonly-opacity: 1;
+  --placeholder-readonly-cursor: not-allowed;
+
+  /*==================[ PARAGRAPH ]==================*/
+  --paragraph-family: var(--body-f-family);
+  --paragraph-colour: var(--body-text-colour);
+
+  /*==================[ LINKS ]==================*/
+  /*regular anchor link*/
+  --a-text-decoration: none;
+  --a-text-decoration-hover: none;
+  --a-text-colour: var(--colour1);
+  --a-text-colour-hover: var(--colour7);
+  /*.links*/
+  --link1-text-colour: var(--colour1);
+  --link1-bg-colour: none;
+  --link1-text-decoration: underline;
+  --link1-display: inline-block;
+  --link1-text-colour-hover: var(--colour7);
+  --link1-bg-colour-hover: none;
+  --link1-text-decoration-hover: underline;
+  --link1-display-hover: inline-block;
+
+  /*==================[ HEADINGS ]==================*/
+  --heading-thin: var(--font-thin);
+  --heading-semithin: var(--font-semithin);
+  --heading-extrathin: var(--font-extrathin);
+  --heading-light: var(--font-light);
+  --heading-semilight: var(--font-semilight);
+  --heading-extralight: var(--font-extralight);
+  --heading-regular: var(--font-regular);
+  --heading-semiregular: var(--font-semiregular);
+  --heading-extraregular: var(--font-extraregular);
+  --heading-medium: var(--font-medium);
+  --heading-semimedium: var(--font-semimedium);
+  --heading-extramedium: var(--font-extramedium);
+  --heading-bold: var(--font-bold);
+  --heading-semibold: var(--font-semibold);
+  --heading-extrabold: var(--font-extrabold);
+  --heading-black: var(--font-black);
+  --heading-semiblack: var(--font-semiblack);
+  --heading-extrablack: var(--font-extrablack);
+
+  /*==================[ BORDER RADIUS ]==================*/
+  --b-radius: 0;
+  /*two sides*/
+  --b-radius-top: var(--b-radius);
+  --b-radius-right: var(--b-radius);
+  --b-radius-bottom: var(--b-radius);
+  --b-radius-left: var(--b-radius);
+  /*single side*/
+  --b-radius-top-right: var(--b-radius);
+  --b-radius-bottom-right: var(--b-radius);
+  --b-radius-bottom-left: var(--b-radius);
+  --b-radius-top-left: var(--b-radius);
+  /*two sides*/
+  --b-radius-0: 0;
+  --b-radius-top-0: 0;
+  --b-radius-right-0: 0;
+  --b-radius-bottom-0: 0;
+  --b-radius-left-0: 0;
+  /*single side*/
+  --b-radius-top-right-0: 0;
+  --b-radius-bottom-right-0: 0;
+  --b-radius-bottom-left-0: 0;
+  --b-radius-top-left-0: 0;
+
+  /*==================[ BORDER ]==================*/
+  --border-colour: var(--colour3);
+  --border-top-colour: var(--colour3);
+  --border-right-colour: var(--colour3);
+  --border-bottom-colour: var(--colour3);
+  --border-left-colour: var(--colour3);
+
+  /* Small screen border colours */
+  --border-sm-colour: var(--colour3);
+  --border-sm-top-colour: var(--colour3);
+  --border-sm-right-colour: var(--colour3);
+  --border-sm-bottom-colour: var(--colour3);
+  --border-sm-left-colour: var(--colour3);
+
+  /* Medium screen border colours */
+  --border-md-colour: var(--colour3);
+  --border-md-top-colour: var(--colour3);
+  --border-md-right-colour: var(--colour3);
+  --border-md-bottom-colour: var(--colour3);
+  --border-md-left-colour: var(--colour3);
+
+  /* Large screen border colours */
+  --border-lg-colour: var(--colour3);
+  --border-lg-top-colour: var(--colour3);
+  --border-lg-right-colour: var(--colour3);
+  --border-lg-bottom-colour: var(--colour3);
+  --border-lg-left-colour: var(--colour3);
+
+  /* Extra-large screen border colours */
+  --border-xl-colour: var(--colour3);
+  --border-xl-top-colour: var(--colour3);
+  --border-xl-right-colour: var(--colour3);
+  --border-xl-bottom-colour: var(--colour3);
+  --border-xl-left-colour: var(--colour3);
+
+  /* Variables for border-0 (no border) */
+  --border-none: 0 !important;
+
+  /*==================[ FORM CONTROL ]==================*/
+  --fc-border-width: 1px;
+  --fc-border-style: solid;
+  --fc-border-colour: var(--border-colour);
+  --fc-font-size: 0.875rem;
+  --fc-text-colour: var(--colour8);
+  /* form-control with dvInput.input-group */
+  --fc-border-top: 1px solid var(--fc-border-colour);
+  --fc-border-right: 1px solid var(--fc-border-colour);
+  --fc-border-bottom: 1px solid var(--fc-border-colour);
+  --fc-border-left: 1px solid var(--fc-border-colour);
+  --fc-radius-top-left: var(--b-radius);
+  --fc-radius-bottom-left: var(--b-radius);
+  --fc-radius-top-right: var(--b-radius);
+  --fc-radius-bottom-right: var(--b-radius);
+  --fc-bg-colour: #ffffff;
+  /* form-control with dvInputGroup.input-group */
+  --ig-fc-border-top: 1px solid var(--fc-border-colour);
+  --ig-fc-border-right: 1px solid transparent;
+  --ig-fc-border-bottom: 1px solid var(--fc-border-colour);
+  --ig-fc-border-left: 1px solid var(--fc-border-colour);
+  --ig-fc-radius-top-left: var(--b-radius);
+  --ig-fc-radius-bottom-left: var(--b-radius);
+  --ig-fc-radius-top-right: 0;
+  --ig-fc-radius-bottom-right: 0;
+  --ig-fc-bg-colour: #ffffff;
+  /* input-group-text */
+  --input-group-text-border-top: 1px solid var(--fc-border-colour);
+  --input-group-text-border-right: 1px solid var(--fc-border-colour);
+  --input-group-text-border-bottom: 1px solid var(--fc-border-colour);
+  --input-group-text-border-left: 1px solid transparent;
+  --input-group-text-radius-top-left: 0;
+  --input-group-text-radius-bottom-left: 0;
+  --input-group-text-radius-top-right: var(--b-radius);
+  --input-group-text-radius-bottom-right: var(--b-radius);
+  --input-group-text-bg-colour: #ffffff;
+  --input-group-text-margin-left: 0px; /*chage to -1px if want to remove space*/
+  /* form-control with select */
+  --select-text-colour: var(--colour8);
+  --select-border-top: 1px solid var(--fc-border-colour);
+  --select-border-right: 1px solid var(--fc-border-colour);
+  --select-border-bottom: 1px solid var(--fc-border-colour);
+  --select-border-left: 1px solid var(--fc-border-colour);
+  --select-radius-top-left: var(--b-radius);
+  --select-radius-bottom-left: var(--b-radius);
+  --select-radius-top-right: var(--b-radius);
+  --select-radius-bottom-right: var(--b-radius);
+  --select-bg-colour: #ffffff;
+
+  /*==================[ TEXT COLOURS ]==================*/
+  --text-colour1: var(--colour1);
+  --text-colour2: var(--colour2);
+  --text-colour3: var(--colour3);
+  --text-colour4: var(--colour4);
+  --text-colour5: var(--colour5);
+  --text-colour6: var(--colour6);
+  --text-colour7: var(--colour7);
+  --text-colour8: var(--colour8);
+  --text-colour9: var(--colour9);
+  --text-colour10: var(--colour10);
+  --text-colour11: var(--colour11);
+  --text-colour12: var(--colour12);
+
+  /*==================[ BACKGROUND BLUR ]==================*/
+  --bg-blur: rgba(255, 255, 255, 0.3); /* Fallback for browsers that don't support */
+  --backdrop-filter: blur(10px);
+
+  /*==================[ BACKGROUND COLOURS ]==================*/
+  --bg-colour1: var(--colour1);
+  --bg-colour2: var(--colour2);
+  --bg-colour3: var(--colour3);
+  --bg-colour4: var(--colour4);
+  --bg-colour5: var(--colour5);
+  --bg-colour6: var(--colour6);
+  --bg-colour7: var(--colour7);
+  --bg-colour8: var(--colour8);
+  --bg-colour9: var(--colour9);
+  --bg-colour10: var(--colour10);
+  --bg-colour11: var(--colour11);
+  --bg-colour12: var(--colour12);
+
+  /*==================[ BUTTONS ]==================*/
+  --btn-family: var(--font-regular);
+  --btn-bg: var(--colour6);
+  --btn-bg-hover: var(--colour3);
+  --btn-text: var(--colour7);
+  --btn-text-hover: var(--colour7);
+  /* button disabled */
+  --btn-disabled-bg: var(--colour3);
+  --btn-disabled-text-colour: var(--colour6);
+  --btn-disabled-border: 1px solid var(--colour3);
+  --btn-disabled-cursor: not-allowed;
+  /* button one */
+  --btn-one-family: var(--font-semibold);
+  --btn-one-bg: var(--colour1);
+  --btn-one-bg-hover: var(--colour6);
+  --btn-one-text: var(--colour6);
+  --btn-one-text-hover: var(--colour1);
+  --btn-one-border-colour: var(--colour1);
+  --btn-one-border-colour-hover: var(--colour1);
+  --btn-one-text-transform: capitalize;
+  --btn-one-b-radius: var(--b-radius);
+  --btn-one-padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+  /* button two */
+  --btn-two-family: var(--font-semibold);
+  --btn-two-bg: var(--colour6);
+  --btn-two-bg-hover: var(--colour1);
+  --btn-two-text: var(--colour1);
+  --btn-two-text-hover: var(--colour6);
+  --btn-two-border-colour: var(--colour1);
+  --btn-two-border-colour-hover: var(--colour6);
+  --btn-two-text-transform: capitalize;
+  --btn-two-b-radius: var(--b-radius);
+  --btn-two-padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+  /* button three */
+  --btn-three-family: var(--font-semibold);
+  --btn-three-bg: var(--colour1);
+  --btn-three-bg-hover: var(--colour6);
+  --btn-three-text: var(--colour6);
+  --btn-three-text-hover: var(--colour1);
+  --btn-three-border-colour: var(--colour1);
+  --btn-three-border-colour-hover: var(--colour1);
+  --btn-three-text-transform: capitalize;
+  --btn-three-b-radius: var(--b-radius);
+  --btn-three-padding: 0.375rem 0.75rem 0.375rem 0.75rem;
+
+  /*==================[ INDIVIDUAL BACKGROUND CLASSES ]==================*/
+  --background1: var(--colour2);
+  --background2: var(--colour3);
+  --background3: var(--colour4);
+
+  /*==================[ LABEL ]==================*/
+  --label-family: var(--heading-semibold);
+  --label-fontsize: 0.875rem;
+  --label-text-colour: var(--colour7);
+  --label-margin-bottom: 0.25rem;
+
+  /*==================[ GROUP HEADINGS ]==================*/
+  /* heading1 */
+  --heading1-family: var(--heading-bold);
+  --heading1-text-colour: var(--colour9);
+  --heading1-font-size-mobile: calc(1.375rem + 1.5vw); /*do not change values*/
+  --heading1-font-size-desktop: 2.5rem; /*do not change values*/
+  /* heading2 */
+  --heading2-family: var(--heading-bold);
+  --heading2-text-colour: var(--colour9);
+  --heading2-font-size-mobile: calc(1.325rem + 0.9vw); /*do not change values*/
+  --heading2-font-size-desktop: 2rem; /*do not change values*/
+  /* heading3 */
+  --heading3-family: var(--heading-bold);
+  --heading3-text-colour: var(--colour1);
+  --heading3-font-size-mobile: calc(1.3rem + 0.6vw); /*do not change values*/
+  --heading3-font-size-desktop: 1.75rem; /*do not change values*/
+  /* heading4 */
+  --heading4-family: var(--heading-bold);
+  --heading4-text-colour: var(--colour7);
+  --heading4-font-size-mobile: calc(1.275rem + 0.3vw); /*do not change values*/
+  --heading4-font-size-desktop: 1.25rem; /*do not change values*/
+  /* heading5 */
+  --heading5-family: var(--heading-bold);
+  --heading5-text-colour: var(--colour7);
+  --heading5-font-size-mobile: 1.25rem; /*do not change values*/
+  --heading5-font-size-desktop: 1.25rem; /*do not change values*/
+  /* heading6 */
+  --heading6-family: var(--heading-bold);
+  --heading6-text-colour: var(--colour7);
+  --heading6-font-size-mobile: 1rem; /*do not change values*/
+  --heading6-font-size-desktop: 1rem; /*do not change values*/
+  /* heading7 */
+  --heading7-family: var(--heading-bold);
+  --heading7-text-colour: var(--colour7);
+  --heading7-font-size-mobile: 0.875rem; /*do not change values*/
+  --heading7-font-size-desktop: 0.875rem; /*do not change values*/
+  /* heading8 */
+  --heading8-family: var(--heading-bold);
+  --heading8-text-colour: var(--colour7);
+  --heading8-font-size-mobile: 0.75rem; /*do not change values*/
+  --heading8-font-size-desktop: 0.75rem; /*do not change values*/
+  /* heading9 */
+  --heading9-family: var(--heading-bold);
+  --heading9-text-colour: var(--colour7);
+  --heading9-font-size-mobile: 0.625rem; /*do not change values*/
+  --heading9-font-size-desktop: 0.625rem; /*do not change values*/
+
+  /*==================[ SWIPER ARROWS ]==================*/
+  /* Both pagination and arrows cannot be displayed in the vertical center at the same time, so disable one of them. */
+  --arrow-disabled-opacity: 0.3;
+  --display-swiper-buttons: block;
+  /*swiper fontawesome icon arrows*/
+  --arrow-prev-left-position: 30px;
+  --arrow-prev-right-position: auto;
+  --arrow-next-left-position: auto;
+  --arrow-next-right-position: 20px;
+  --arrow-fa-icon-size: 15px;
+  --arrow-fa-icon-text-colour: var(--colour6);
+  --arrow-fa-icon-bg-colour: var(--colour1);
+  --arrow-fa-icon-padding: 0.75rem;
+  --arrow-fa-icon-b-radius: var(--b-radius);
+  /*swiper image arrows*/
+  --arrow-image-width: 30px;
+
+  /*==================[ SWIPER CUSTOMIZED ARROWS ]==================*/
+  --display-swiper-arrows: none; /* change only if you want default arrows */
+  --custom-arrow-position: static; /* do not change values */
+  --custom-arrow-width: auto; /* do not change values */
+  --custom-arrow-margin: 0; /* do not change values */
+  --custom-arrow-height: auto; /* do not change values */
+  --custom-arrow-image-width: 40px;
+
+  /*==================[ SWIPER PAGINATION ]==================*/
+  /* Both pagination and arrows cannot be displayed in the vertical center at the same time, so disable one of them. */
+  --display-swiper-pagination: block;
+  /* swiper pagination */
+  --pagination-bg: var(--colour7);
+  --pagination-border: var(--colour1);
+  --pagination-opacity: 1;
+  --pagination-active-bg: var(--colour1);
+  --pagination-active-border: var(--colour6);
+  --pagination-active-opacity: 1;
+
+  /*==================[ FILTER MODAL MOBILE ]==================*/
+  --filter-mobile-modal-content-border: 0;
+  --filter-mobile-modal-content-b-radius: var(--b-radius);
+  --filter-mobile-modal-content-overflow: hidden; /* apply when you need b-radius */
+  --filter-mobile-modal-body-padding: 0 1rem 0 1rem;
+  --filter-mobile-modal-header-bg: var(--colour5);
+  --filter-mobile-modal-header-padding: 0.5rem 1rem;
+  /* modal title */
+  --filter-mobile-modal-title-family: var(--font-bold);
+  --filter-mobile-modal-title-fontsize: 1rem;
+  --filter-mobile-modal-title-text-colour: var(--colour7);
+  /* modal close btn */
+  --filter-mobile-modal-close-padding: 0.75rem 0 0.75rem 0.75rem;
+  --filter-mobile-modal-close-margin: 0;
+  --filter-mobile-modal-close-text-colour: var(--colour1);
+  --filter-mobile-modal-close-opacity: 1;
+  /* modal close btn icon */
+  --filter-mobile-modal-close-icon-text-colour: var(--colour1);
+
+  /*==================[ FILTER ACCORDION MOBILE ]==================*/
+  --filter-mobile-accordion-border: 1px solid transparent;
+  --filter-mobile-accordion-card-border: 1px solid transparent;
+  --filter-mobile-accordion-card-header-border-bottom: none;
+  --filter-mobile-accordion-background: transparent;
+  --filter-mobile-accordion-card-header-padding: 0;
+  --filter-mobile-accordion-card-header-btn-border: 1px solid transparent;
+  --filter-mobile-accordion-card-header-btn-padding: 0.5rem 0;
+  --filter-mobile-accordion-card-body-padding: 0;
+  /* show or hide scroll-ver */
+  --filter-mobile-accordion-scroll-ver-overflow-x: hidden;
+  --filter-mobile-accordion-scroll-ver-margin: 0;
+  --filter-mobile-accordion-scroll-ver-max-height: 240px; /* none to hide scroll */
+  /* scrollbar for filter accordion */
+  --filter-mobile-accordion-scrollbar-width: var(--scrollbar-custom-size);
+  --filter-mobile-accordion-scrollbar-track-bg: var(--scrollbar-track-bg);
+  --filter-mobile-accordion-scrollbar-thumb-bg: var(--scrollbar-thumb-bg);
+  /* scrollbar for filter modal */
+  --filter-mobile-modal-scrollbar-width: var(--scrollbar-custom-size);
+  --filter-mobile-modal-scrollbar-track-bg: var(--scrollbar-track-bg);
+  --filter-mobile-modal-scrollbar-thumb-bg: var(--scrollbar-thumb-bg);
+
+  /*==================[ FILTER MODAL DESKTOP ]==================*/
+  /* converted modal to static */
+  --filter-desktop-modal-position: static;
+  --filter-desktop-modal-display: block;
+  --filter-desktop-modal-width: auto;
+  --filter-desktop-modal-height: auto;
+  --filter-desktop-modal-overflow: auto;
+  --filter-desktop-modal-opacity: 1;
+  --filter-desktop-modal-z-index: 0;
+  /* modal-dialog */
+  --filter-desktop-modal-dialog-margin: 0 auto;
+  --filter-desktop-modal-dialog-transform: translate(0, 0);
+  --filter-desktop-modal-dialog-min-height: auto;
+  /* modal-scrollable */
+  --filter-desktop-modal-dialog-scrollable-justify-content: auto;
+  --filter-desktop-modal-dialog-scrollable-max-height: auto;
+  /* modal-footer */
+  --filter-desktop-modal-footer-border: 1px solid transparent;
+
+  /*==================[ FILTER ACCORDION DESKTOP ]==================*/
+  --filter-desktop-accordion-border: 1px solid var(--border-colour);
+  --filter-desktop-accordion-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --filter-desktop-accordion-b-radius: 0 0 var(--b-radius) var(--b-radius);
+  --filter-desktop-accordion-overflow: hidden;
+  --filter-desktop-accordion-padding: 0.75rem 1rem;
+
+  /*==================[ COMMON MODAL ]==================*/
+  /*scrollbar style*/
+  --modal-scrollbar-width: var(--scrollbar-custom-size);
+  --modal-scrollbar-track-bg: var(--scrollbar-track-bg);
+  --modal-scrollbar-thumb-bg: var(--scrollbar-thumb-bg);
+  /*border-radius*/
+  --modal-b-radius: var(--b-radius);
+  /*modal-header*/
+  --modal-header-padding: 1rem 1rem;
+  --modal-header-bg-colour: var(--colour1);
+  --modal-header-align-items: center;
+  --modal-header-border-bottom: none;
+  /*modal-title*/
+  --modal-title-font-family: var(--heading-bold);
+  --modal-title-text-colour: var(--colour6);
+  --modal-title-fontsize: 1rem;
+  /*modal-footer*/
+  --modal-footer-border-top: none;
+  --modal-footer-padding: 0 1rem 1rem 1rem;
+  /*modal close button*/
+  --modal-close-btn-opacity: 1;
+  --modal-close-btn-fontsize: 1rem;
+  --modal-close-icon-bg: transparent;
+  --modal-close-icon-text-colour: var(--colour6);
+  --modal-close-icon-fontsize: 1rem;
+
+  /*==================[ COMMON ACCORDION ]==================*/
+  --accordion-header-family: var(--font-semibold);
+  --accordion-body-family: var(--font-medium);
+  --accordion-border-colour: transparent /*var(--border-colour)*/;
+  --accordion-card-border: transparent;
+  --accordion-header-bg: var(--colour2);
+  --accordion-header-text: var(--colour7);
+  --accordion-header-border: var(--colour5);
+  --accordion-header-b-radius: var(--b-radius);
+  --accordion-header-active-bg: var(--colour2);
+  --accordion-header-active-text: var(--colour7);
+  --accordion-header-active-border: var(--colour5);
+  --accordion-header-active-b-radius: var(--b-radius) var(--b-radius) 0 0;
+  --accordion-body-bg: var(--colour6);
+  --accordion-body-text: var(--colour7);
+  --accordion-body-border: var(--border-colour);
+  --accordion-body-b-radius: 0 0 var(--b-radius) var(--b-radius);
+  --accordion-body-active-bg: var(--colour6);
+  --accordion-body-active-text: var(--colour4);
+  --accordion-body-active-border: var(--colour4);
+  --accordion-body-active-b-radius: var(--b-radius);
+
+  /*==================[ VALIDATION ERRORS for text type ]==================*/
+  --danger-family: var(--heading-medium);
+  --danger-fontsize: 0.75rem;
+  --danger-text-colour: #dc3545;
+
+  --success-family: var(--heading-medium);
+  --success-fontsize: 0.75rem;
+  --success-text-colour: #28a745;
+
+  --warning-family: var(--heading-medium);
+  --warning-fontsize: 0.75rem;
+  --warning-text-colour: #ffc107;
+
+  /*==================[ VALIDATION ERRORS for Alerts type ]==================*/
+  --alert-danger-family: var(--heading-medium);
+  --alert-danger-fontsize: 1rem;
+  --alert-danger-bg-colour: #f8d7da;
+  --alert-danger-text-colour: #721c24;
+  --alert-danger-border-colour: #f5c6cb;
+
+  --alert-success-family: var(--heading-medium);
+  --alert-success-fontsize: 1rem;
+  --alert-success-bg-colour: #d4edda;
+  --alert-success-text-colour: #155724;
+  --alert-success-border-colour: #c3e6cb;
+
+  --alert-warning-family: var(--heading-medium);
+  --alert-warning-fontsize: 1rem;
+  --alert-warning-bg-colour: #fff3cd;
+  --alert-warning-text-colour: #856404;
+  --alert-warning-border-colour: #ffeeba;
+
+  /*==================[ PRODUCT CARD ]==================*/
+  /*dvItem*/
+  --p-card-border-colour: var(--border-colour);
+  --p-card-border-radius: var(--b-radius);
+  --p-card-padding: 0rem;
+  /*img-container*/
+  --p-card-img-container-border-radius: 0;
+  /*anchor*/
+  --p-card-anchor-display: block;
+  --p-card-anchor-margin: 0;
+  /*h2*/
+  --p-card-h2-family: var(--font-bold);
+  --p-card-h2-fontsize: 1rem;
+  --p-card-h2-text-colour: var(--colour7);
+  --p-card-h2-padding: 0rem 1rem;
+  /*h3*/
+  --p-card-h3-family: var(--font-regular);
+  --p-card-h3-fontsize: 0.875rem;
+  --p-card-h3-text-colour: var(--colour7);
+  --p-card-h3-padding: 0rem 1rem;
+  /*points*/
+  --p-card-points-family: var(--font-semibold);
+  --p-card-points-fontsize: 0.875rem;
+  --p-card-points-text-colour: var(--colour7);
+  /*button*/
+  --p-card-button-border-colour: var(--btn-one-border-colour);
+  --p-card-button-family: var(--btn-one-family);
+  --p-card-button-bg: var(--btn-one-bg);
+  --p-card-button-text-colour: var(--btn-one-text);
+  --p-card-button-border-colour: 1px solid var(--btn-one-border-colour);
+  --p-card-button-text-transform: var(--btn-one-text-transform);
+  --p-card-button-border-radius: var(--btn-one-b-radius);
+  --p-card-button-padding: var(--btn-one-padding);
+  --p-card-button-margin-top: auto;
+  --p-card-button-bg-hover: var(--btn-one-bg-hover);
+  --p-card-button-text-colour-hover: var(--btn-one-text-hover);
+  --p-card-button-border-colour-hover: 1px solid var(--btn-one-border-colour-hover);
+  /*paragraph*/
+  --p-card-paragraph-family: var(--paragraph-family);
+  --p-card-paragraph-text-colour: var(--paragraph-colour);
+
+  /*==================[ DENOMINATION ]==================*/
+  --denomination-btn-active-background: none no-repeat 0 0 var(--bg-colour1);
+  --denomination-btn-active-text-colour: var(--bg-colour6);
+  --denomination-btn-padding: 0.5rem;
+  --denomination-btn-margin: 0 0 1rem 0;
+  --denomination-btn-background: url("/Images/shop/btnImg.png") no-repeat top right var(--bg-colour6);
+  --denomination-btn-background-size: contain;
+  --denomination-btn-text-colour: var(--text-colour7);
+  --denomination-btn-cursor: pointer;
+  --denomination-btn-border: 1px solid var(--border-colour);
+  --denomination-btn-border-radius: var(--b-radius);
+
+  /*==================[ TABS SCROLLBAR FOR TAB PILLS & TAB REGULAR ]==================*/
+  --tab-scrollbar-height: var(--scrollbar-custom-size);
+  --tab-scrollbar-track-bg: var(--scrollbar-track-bg);
+  --tab-scrollbar-thumb-bg: var(--scrollbar-thumb-bg);
+
+  /*==================[ TAB REGULAR ]==================*/
+  --tab-bg-colour: transparent;
+  --tab-text-colour: var(--body-text-colour);
+  --tab-active-bg-colour: var(--colour1);
+  --tab-active-text-colour: var(--colour6);
+  --tab-border-colour: var(--border-colour);
+  --tab-active-border-colour: var(--colour1);
+  --tab-border-radius: var(--b-radius);
+  --tab-margin: 0 0.875rem 0 0;
+
+  /*==================[ TAB PILLS ]==================*/
+  --pills-bg-colour: transparent;
+  --pills-text-colour: var(--body-text-colour);
+  --pills-active-bg-colour: var(--colour1);
+  --pills-active-text-colour: var(--colour6);
+  --pills-border-colour: var(--border-colour);
+  --pills-border-radius: var(--b-radius);
+  --pills-margin: 0 0.875rem 0 0;
+
+  /*==================[ UPDPROGRESS LOADER ]==================*/
+  --updProgress-position: fixed;
+  --updProgress-width: 100%;
+  --updProgress-height: 100%;
+  --updProgress-top: 0;
+  --updProgress-left: 0;
+  --updProgress-z-index: 10000;
+  --updProgress-bg: rgba(0, 0, 0, 0.5);
+  /*dvLoader*/
+  --updProgress-dvLoader-display: flex;
+  --updProgress-dvLoader-justify-content: center;
+  --updProgress-dvLoader-align-items: center;
+  --updProgress-dvLoader-height: 100%;
+  /* updProgress loader */
+  --updProgress-loader-width: 48px;
+  --updProgress-loader-height: 48px;
+  --updProgress-loader-border: 5px solid #fff;
+  --updProgress-loader-border-bottom-colour: var(--colour1);
+  --updProgress-loader-b-radius: 50%;
+  --updProgress-loader-display: inline-block;
+  --updProgress-loader-animation: rotation 1s linear infinite;
+  /* updProgress image */
+  --updProgress-image-width: 60px;
+  --updProgress-image-bg: #ffffff;
+  --updProgress-image-b-radius: var(--b-radius);
+  --updProgress-image-position: absolute;
+  --updProgress-image-top: 50%;
+  --updProgress-image-left: 50%;
+  --updProgress-image-transform: translate(-50%, -50%);
+  --updProgress-image-z-index: 2;
+
+  /*==================[ IMAGE CONTAINER ]==================*/
+  --img-container-width: 100%;
+  --img-container-height: 0;
+  --img-container-padding-bottom: 100%;
+  --img-container-position: relative;
+  --img-container-overflow: hidden;
+  --img-container-bg-colour: var(--colour2);
+  /*image container img*/
+  --img-container-img-width: 100% !important;
+  --img-container-img-height: 100%;
+  --img-container-img-object-fit: cover;
+  --img-container-img-object-position: center;
+  --img-container-img-position: absolute;
+  --img-container-img-top: 0;
+  --img-container-img-left: 0;
+
+  /*==================[ SCROLL HORIZONTAL ]==================*/
+  --scroll-horizontal-mobile-overflow-x: auto;
+  --scroll-horizontal-mobile-overflow-y: hidden;
+  --scroll-horizontal-desktop-overflow: hidden;
+
+  /*==================[ SCROLL VERTICAL ]==================*/
+  --scroll-vertical-mobile-overflow-x: hidden;
+
+  /*==================[ EAUAL COLUMNS ]==================*/
+  --equal-columns-margin-left: 0.469rem;
+  --equal-columns-margin-right: 0.469rem;
+  --equal-columns-padding-left: 0.5rem;
+  --equal-columns-padding-right: 0.5rem;
+
+  /*==================[ BREADCRUMBS ]==================*/
+  --breadcrumb-bg: transparent;
+  --breadcrumb-margin-bottom: 0;
+  --breadcrumb-anchor-bg: transparent;
+  --breadcrumb-anchor-text-colour: var(--colour7);
+  --breadcrumb-anchor-bg-active: transparent;
+  --breadcrumb-anchor-text-colour-active: var(--colour1);
+
+  /*==================[ BOOTSTRAP PAGINATION ]==================*/
+  --b-pagination-box-shadow-focus: none;
+  --b-pagination-pagelink-bg: transparent;
+  --b-pagination-pagelink-text-colour: var(--colour1);
+  --b-pagination-pagelink-cursor: pointer;
+  /*active*/
+  --b-pagination-pagelink-bg-active: var(--colour1);
+  --b-pagination-pagelink-text-colour-active: var(--colour6);
+  --b-pagination-pagelink-border-colour-active: var(--colour1);
+  /*disabled*/
+  --b-pagination-pagelink-bg-disabled: var(--colour6);
+  --b-pagination-pagelink-text-colour-disabled: #6c757d;
+  --b-pagination-pagelink-border-colour-disabled: #dee2e6;
+
+  /*==================[ HOTEL PRODUCT CARD ]==================*/
+  /* HOTEL PRODUCT CARD */
+  /*dvItem*/
+  --hp-card-border-colour: var(--border-colour);
+  --hp-card-border-radius: var(--b-radius);
+  --hp-card-padding: 1rem;
+
+  /*img-container*/
+  --hp-card-img-container-border-radius: 0;
+
+  /*anchor*/
+  --hp-card-anchor-display: block;
+  --hp-card-anchor-margin: 0;
+
+  /*h2*/
+  --hp-card-h2-family: var(--font-semibold);
+  --hp-card-h2-fontsize: 1rem;
+  --hp-card-h2-text-colour: var(--colour1);
+
+  /*points*/
+  --hp-card-points-family: var(--font-medium);
+  --hp-card-points-fontsize: 0.875rem;
+  --hp-card-points-text-colour: var(--colour5);
+
+  /*button*/
+  --hp-card-button-border-colour: var(--btn-one-border-colour);
+  --hp-card-button-family: var(--btn-one-family);
+  --hp-card-button-bg: var(--btn-one-bg);
+  --hp-card-button-text-colour: var(--btn-one-text);
+  --hp-card-button-border-colour: 1px solid var(--btn-one-border-colour);
+  --hp-card-button-text-transform: var(--btn-one-text-transform);
+  --hp-card-button-border-radius: var(--btn-one-b-radius);
+  --hp-card-button-padding: var(--btn-one-padding);
+  --hp-card-button-margin-top: auto;
+  --hp-card-button-bg-hover: var(--btn-one-bg-hover);
+  --hp-card-button-text-colour-hover: var(--btn-one-text-hover);
+  --hp-card-button-border-colour-hover: 1px solid var(--btn-one-border-colour-hover);
+
+  /*==================[ JQUERY UI AUTOCOMPLETE ]==================*/
+  /*scrollbar*/
+  --ui-autocomplete-scrollbar-width: var(--scrollbar-custom-size);
+  --ui-autocomplete-scrollbar-track-bg: var(--scrollbar-track-bg);
+  --ui-autocomplete-scrollbar-thumb-bg: var(--scrollbar-thumb-bg);
+  /*bg and hover*/
+  --ui-autocomplete-bg-colour: var(--colour1);
+  --ui-autocomplete-text-colour: var(--colour6);
+  --ui-autocomplete-bg-colour-hover: var(--colour1);
+  --ui-autocomplete-text-colour-hover: var(--colour6);
+  --ui-autocomplete-opacity: 1;
+  --ui-autocomplete-opacity-hover: 0.9;
+
+  /*==================[ JQUERY UI DATEPICKER ]==================*/
+  /* header bg and date title */
+  --ui-datepicker-header-bg-colour: var(--colour1);
+  --ui-datepicker-header-text-colour: var(--colour6);
+  /* prev & next buttons */
+  --ui-datepicker-prev-next-buttons-bg-colour: var(--colour6);
+  --ui-datepicker-prev-next-buttons-border: 1px solid transparent;
+  --ui-datepicker-prev-next-buttons-text-colour: var(--colour6);
+  /* current date */
+  --ui-datepicker-current-bg-colour: var(--colour1);
+  --ui-datepicker-current-border: var(--colour1);
+  --ui-datepicker-current-text-colour: var(--colour6);
+  /* selected date */
+  --ui-datepicker-selected-date-bg-colour: var(--colour1);
+  --ui-datepicker-selected-date-border: var(--colour1);
+  --ui-datepicker-selected-date-text-colour: var(--colour6);
+  /* text colour for all dates */
+  --ui-datepicker-all-date-text-colour: var(--colour1);
+
+  /*==================[ JQUERY UI RANGE SLIDER ]==================*/
+  /*slide margin*/
+  --rangeslider-margin: 5px 10px 0px 5px;
+  /*slide height*/
+  --rangeslider-slide-height: 0.25rem;
+  /*slide selected bg*/
+  --rangeslider-slide-selected-bg-colour: var(--colour7);
+  /*slide border background colour*/
+  --rangeslider-slide-border-bg-colour: var(--colour2);
+  /*round handle*/
+  --rangeslider-handle-bg-colour: var(--colour1);
+  --rangeslider-handle-border: 1px solid var(--colour1);
+  --rangeslider-handle-border-radius: 50%;
+  --rangeslider-handle-width: 12px;
+  --rangeslider-handle-height: 12px;
+  /* handle position */
+  --rangeslider-handle-top: -4px;
+  --rangeslider-handle-margin-left: -5px;
+
+  /*==================[ CAR SELECTION SCROLLBAR ]==================*/
+  --car-selection-scrollbar-height: var(--scrollbar-custom-size);
+  --car-selection-scrollbar-track-bg: var(--scrollbar-track-bg);
+  --car-selection-scrollbar-thumb-bg: var(--scrollbar-thumb-bg);
+}
+
+/*
+      ABC THEME -
+      - - - - - - - - - - - - - - - -
+  
+      FONT FAMILY USED -
+      - - - - - - - - - - - - - - - -
+      Open Sans
+  
+      HEADINGS USED - 
+      - - - - - - - - - - - - - - - -
+      1. heading1 - big main headings
+      2. heading2
+      3. heading5
+      4. heading6 - common small headings
+  
+      RESPONSIVE HEADINGS LOGIC
+      - - - - - - - - - - - - - - - -
+      h1 - font-size: calc(1.375rem + 1.5vw);
+      h2 - font-size: calc(1.325rem + .9vw);
+      h3 - font-size: calc(1.3rem + .6vw);
+      h4 - font-size: calc(1.275rem + .3vw);
+      h5 - font-size: 1.25rem;
+      h6 - font-size: 1rem;    - 16px
+      h7 - font-size: .875rem; - 14px
+      h8 - font-size: .75rem;  - 12px
+      h9 - font-size: .625rem; - 10px
+  
+      media queries - 992px and above
+      h1 - font-size: 2.5rem;
+      h2 - font-size: 2rem;
+      h3 - font-size: 1.75rem;
+      h4 - font-size: 1.5rem;
+      h5 - font-size: 1.25rem;
+      h6 - font-size: 1rem;
+  */
+
+/* 
+  ########----- COMPONENT INFO -----########
+  
+  .heading1
+  ------------------------------------
+  AboutUs.aspx
+  BookingPolicy.aspx
+  Disclaimer.aspx
+  ExperienceProductList.aspx
+  FlightSearch.aspx
+  HotelSearch.aspx
+  Index.aspx
+  PrivacyPolicy.aspx
+  Redeem.aspx
+  Shop.aspx.cs
+  TermsandConditions.aspx
+  
+  .heading2
+  ------------------------------------
+  HotelDetails.aspx
+  Index.aspx
+  
+  .heading5
+  ------------------------------------
+  Index.aspx
+  
+  .heading6
+  ------------------------------------
+  BookingPolicy.aspx
+  CarDetails.aspx
+  CarDetails.aspx.cs
+  CarList.aspx
+  CarList.aspx.cs
+  CarPayment.aspx
+  CarPayment.aspx.cs
+  ExperienceProductBookingDetails.aspx
+  ExperienceProductDetails.aspx
+  ExperienceSearach.aspx
+  FlightList.aspx
+  FlightPassenger.aspx
+  OrderDetails.aspx.cs
+  Redeem.aspx
+  ShopList.aspx
+  ShopList.aspx.cs
+  Templates/DomesticOneWayOutbound.htm
+  InternationalTwoWay.htm
+  TermsandConditions.aspx
+  TestExtSSORequest.aspx
+  
+  
+  
+  .dvFilter modal fade - DONE
+  ------------------------------------
+  CarList.aspx
+  ExperienceSearch.aspx
+  FlightList.aspx
+  HotelResults.aspx
+  ShopList.aspx
+  
+  
+  
+  .dvCommonModal - DONE
+  ------------------------------------
+  CarDetails.aspx
+  CarList.aspx
+  CarPayment.aspx
+  HotelDetails.aspx
+  OrderDetails.aspx
+  SiteMaster.master
+  ExperienceProductBookingDetails.aspx
+  ManageBooking.aspx
+  ProductDetails.aspx
+  Templates/DomesticFinalTemplate.htm
+  
+  
+  
+  .dvCommonAccordion - DONE
+  ------------------------------------
+  NOTE - ignore data-parent="#filter-accordion" sections, these accordions are in .dvFilter modal fade sections
+  Aboutus.aspx
+  BookingPolicy.aspx
+  CarDetails.aspx
+  CarPayment.aspx
+  FAQ.aspx
+  ManageBooking.aspx
+  ViewMemberProfile.aspx
+  Voucher.aspx.exclude
+  
+  
+  
+  .dvDeliveryTrack - DONE
+  ------------------------------------
+  NOTE - .dvDeliveryTrack css is different for Car.css experience.css and OrderDetails.css
+  CarList.aspx
+  CarDetails.aspx
+  ExperienceProductBookingDetails.aspx
+  ExperienceProductStatus.aspx
+  OrderDetails.aspx
+  OrderDetails.aspx.cs
+  
+  
+  
+  .dvProductCard - DONE
+  ------------------------------------
+  ExperienceProductList.aspx
+  ExperienceSearch.aspx
+  FlightSearch.aspx
+  HotelResult.aspx
+  HotelSearch.aspx
+  Index.aspx.cs
+  HotelDetails.js
+  Shop.aspx.cs
+  ShopList.aspx.cs
+  
+  
+  
+  STATIC PAGES
+  ------------------------------------
+  aboutus.aspx - DONE
+  faq.aspx - DONE
+  earn.aspx - PENDING
+  redeem.aspx - DONE
+  termsandconditions.aspx - DONE
+  privacypolicy.aspx - DONE
+  bookingpolicy.aspx - DONE
+  disclaimer.aspx - PENDING - Gopal told to hide this page
+  */

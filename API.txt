@@ -1,0 +1,7 @@
+TOKEN - leki1pzxeetkv09yv3h4qrd4b3hd09a093q6zlle
+
+ABC HOMEPAGE API -
+https://api.json-generator.com/templates/Cyo-vox6bDy-/data?access_token=leki1pzxeetkv09yv3h4qrd4b3hd09a093q6zlle
+
+ABC SHOP API -
+https://api.json-generator.com/templates/C1S3-7ng2nMQ/data?access_token=leki1pzxeetkv09yv3h4qrd4b3hd09a093q6zlle
