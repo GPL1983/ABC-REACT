@@ -24,12 +24,12 @@ const SwiperContainer = ({ children, sliderName, options }) => {
       clickable: true,
     },
     spaceBetween: 16,
-    breakpoints: {
-      0: { slidesPerView: 1 },
-      576: { slidesPerView: 2 },
-      992: { slidesPerView: 3 },
-      1200: { slidesPerView: 4 },
-    },
+    // breakpoints: {
+    //   0: { slidesPerView: 1 },
+    //   576: { slidesPerView: 2 },
+    //   992: { slidesPerView: 3 },
+    //   1200: { slidesPerView: 4 },
+    // },
     ...options, // Merge passed options with default options
   };
 

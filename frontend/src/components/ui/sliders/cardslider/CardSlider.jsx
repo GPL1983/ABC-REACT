@@ -1,6 +1,6 @@
 import React from "react";
 import { SwiperSlide } from "swiper/react";
-import SwiperContainer from "../SwiperContainer"; // Adjust the path to your actual SwiperContainer
+import SwiperContainer from "../SwiperContainer";
 
 const CardSlider = ({ vouchers, shopDeals, sliderName }) => {
   const slides = vouchers || shopDeals || [];
