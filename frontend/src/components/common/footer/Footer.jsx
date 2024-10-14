@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+import { FaFacebookSquare, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="bg-colour1 py-4">
           <div className="container-xl">
             <div className="row align-items-lg-center">
-              <div className="dvLinks col-lg-10 text-center text-lg-left mb-3 mb-lg-0 text-uppercase">
+              <div className="dvLinks col-lg-10 text-center text-lg-start mb-3 mb-lg-0 text-uppercase">
                 <a className="d-block d-md-inline-block py-1" href="ComingSoon.aspx">
                   Earn
                 </a>
@@ -31,20 +32,21 @@ const Footer = () => {
                   Booking Policy
                 </a>
               </div>
-              <div className="dvSocialIcons col-lg-2 text-center text-lg-right mb-3 mb-md-0">
+              <div className="dvSocialIcons col-lg-2 text-center text-lg-end mb-3 mb-md-0">
                 <a
                   className="d-inline-block px-1"
                   href="https://www.facebook.com/ABCbankingcorporation"
                   target="_blank"
                 >
-                  <i className="fa-brands fa-facebook text-colour6"></i>
+                  <FaFacebookSquare className="text-colour6" />
                 </a>
                 <a
                   className="d-inline-block px-1"
                   href="https://www.linkedin.com/company/abc-banking-corporation-ltd-mauritius"
                   target="_blank"
                 >
-                  <i className="fa-brands fa-linkedin text-colour6"></i>
+                  <FaLinkedin className="text-colour6" />
+                  <i></i>
                 </a>
               </div>
             </div>
@@ -52,7 +54,7 @@ const Footer = () => {
         </div>
         <div className="container-xl py-4">
           <div className="row align-items-lg-center">
-            <div className="col-sm-12 col-lg-2 text-center text-lg-left mb-3 mb-lg-0">
+            <div className="col-sm-12 col-lg-2 text-center text-lg-start mb-3 mb-lg-0">
               <a className="d-inline-block" href="https://www.abcbanking.mu/" target="_blank">
                 <img
                   className="img-fluid footer-logo"
@@ -68,7 +70,7 @@ const Footer = () => {
                 ABC BANKING CORPORATION LTD. All rights reserved.
               </p>
             </div>
-            <div className="col-sm-12 col-lg-4 text-center text-lg-right">
+            <div className="col-sm-12 col-lg-4 text-center text-lg-end">
               <a className="d-inline-block" href="https://www.giift.com/" target="_blank">
                 <img className="img-fluid" src="/src/assets/images/logos/giift-logo.svg" alt="Giift Logo" />
               </a>

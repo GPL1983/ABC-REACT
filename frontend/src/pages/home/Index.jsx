@@ -10,6 +10,8 @@ import UnlockRewards from "./unlockrewards/UnlockRewards";
 const HOME_API = import.meta.env.VITE_HOME_API;
 
 const Index = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [isError, setIsError] = useState(false);
   const [heroSlider, setHeroSlider] = useState([]);
   const [redemptionMenu, setRedemptionMenu] = useState([]);
   const [rewards, setRewards] = useState([]);
@@ -22,8 +24,10 @@ const Index = () => {
 
   const fetchHomepage = async () => {
     try {
+      setIsLoading(true);
       const response = await fetch(HOME_API);
       if (response.ok) {
+        setIsLoading(false);
         const data = await response.json();
         setHeroSlider(data.homeapi.heroSlider);
         setRedemptionMenu(data.homeapi.redemptionMenu);
@@ -31,22 +35,26 @@ const Index = () => {
         setVouchers(data.homeapi.vouchers);
         setShopDeals(data.homeapi.shopdeals);
       } else {
+        setIsLoading(false);
+        setIsError(true);
         console.log("api error");
       }
     } catch (error) {
+      setIsLoading(false);
+      setIsError(true);
       console.log(`this is network ${error}`);
     }
   };
 
   return (
     <>
-      <HeroSlider heroSlider={heroSlider} />
-      <RedemptionMenu redemptionMenu={redemptionMenu} />
+      <HeroSlider heroSlider={heroSlider} isLoading={isLoading} isError={isError} />
+      {/* <RedemptionMenu redemptionMenu={redemptionMenu} isLoading={isLoading} isError={isError} />
       <Welcome />
-      <ShopDeals shopDeals={shopDeals} />
-      <Rewards rewards={rewards} />
-      <Vouchers vouchers={vouchers} />
-      <UnlockRewards />
+      <ShopDeals shopDeals={shopDeals} isLoading={isLoading} isError={isError} />
+      <Rewards rewards={rewards} isLoading={isLoading} isError={isError} />
+      <Vouchers vouchers={vouchers} isLoading={isLoading} isError={isError} />
+      <UnlockRewards /> */}
     </>
   );
 };

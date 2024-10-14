@@ -23,9 +23,9 @@ const UnlockRewards = () => {
                 <div className="col-lg-6 offset-xl-1 col-xl-6 py-lg-5">
                   <div className="row mb-3">
                     <div className="col-2 col-sm-1">
-                      <div className="bg-colour1 b-radius p-2 text-colour6 d-inline-block">
+                      <span className="bg-colour1 b-radius p-2 text-colour6 d-inline-block">
                         <FaCheck />
-                      </div>
+                      </span>
                     </div>
                     <div className="col-10 col-sm-11">
                       <h2 className="heading5 mb-2">How do I accumulate points?</h2>
@@ -37,9 +37,9 @@ const UnlockRewards = () => {
                   </div>
                   <div className="row mb-3">
                     <div className="col-2 col-sm-1">
-                      <div className="bg-colour1 b-radius p-2 text-colour6 d-inline-block">
+                      <span className="bg-colour1 b-radius p-2 text-colour6 d-inline-block">
                         <FaCheck />
-                      </div>
+                      </span>
                     </div>
                     <div className="col-10 col-sm-11">
                       <h2 className="heading5 mb-2">What can I exchange my points for?</h2>
@@ -51,9 +51,9 @@ const UnlockRewards = () => {
                   </div>
                   <div className="row mb-3">
                     <div className="col-2 col-sm-1">
-                      <div className="bg-colour1 b-radius p-2 text-colour6 d-inline-block">
+                      <span className="bg-colour1 b-radius p-2 text-colour6 d-inline-block">
                         <FaCheck />
-                      </div>
+                      </span>
                     </div>
                     <div className="col-10 col-sm-11">
                       <h2 className="heading5 mb-2">How long are my points valid for?</h2>
@@ -65,9 +65,9 @@ const UnlockRewards = () => {
                   </div>
                   <div className="row mb-3 mb-lg-0">
                     <div className="col-2 col-sm-1">
-                      <div className="bg-colour1 b-radius p-2 text-colour6 d-inline-block">
+                      <span className="bg-colour1 b-radius p-2 text-colour6 d-inline-block">
                         <FaCheck />
-                      </div>
+                      </span>
                     </div>
                     <div className="col-10 col-sm-11">
                       <h2 className="heading5 mb-2">How can I check my points balance?</h2>
