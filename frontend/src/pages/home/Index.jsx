@@ -49,12 +49,12 @@ const Index = () => {
   return (
     <>
       <HeroSlider heroSlider={heroSlider} isLoading={isLoading} isError={isError} />
-      {/* <RedemptionMenu redemptionMenu={redemptionMenu} isLoading={isLoading} isError={isError} />
+      <RedemptionMenu redemptionMenu={redemptionMenu} isLoading={isLoading} isError={isError} />
       <Welcome />
       <ShopDeals shopDeals={shopDeals} isLoading={isLoading} isError={isError} />
       <Rewards rewards={rewards} isLoading={isLoading} isError={isError} />
       <Vouchers vouchers={vouchers} isLoading={isLoading} isError={isError} />
-      <UnlockRewards /> */}
+      <UnlockRewards />
     </>
   );
 };

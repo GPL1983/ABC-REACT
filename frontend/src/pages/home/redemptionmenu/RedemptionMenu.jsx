@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./redemptionmenu.css";
 import IconCard from "../../../components/ui/iconcard/IconCard";
+import RedemptionMenuLoader from "../../../components/skeleton/RedemptionMenuLoader";
 
-const RedemptionMenu = ({ redemptionMenu }) => {
+const RedemptionMenu = ({ redemptionMenu, isLoading, isError }) => {
+  const [componentName] = useState("RedemptionMenu");
   // console.log(redemptionMenu);
+
+  if (isLoading) {
+    return <RedemptionMenuLoader loadingText={componentName} menucount={redemptionMenu.length} />;
+  }
+
+  if (isError) {
+    return <ErrorLoader loadingText={componentName} />;
+  }
 
   return (
     <>

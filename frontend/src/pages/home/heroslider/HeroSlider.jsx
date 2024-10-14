@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "./heroslider.css";
 import ImageSlider from "../../../components/ui/sliders/imageslider/ImageSlider";
-import Loading from "../../../components/loading/Loading";
 import Error from "../../../components/error/Error";
+import ImageLoader from "../../../components/skeleton/ImageLoader";
 
 const HeroSlider = ({ heroSlider, isLoading, isError }) => {
   const [componentName] = useState("HeroSlider");
 
   if (isLoading) {
-    return <Loading loadingText={componentName} />;
+    return <ImageLoader loadingText={componentName} />;
   }
 
   if (isError) {
