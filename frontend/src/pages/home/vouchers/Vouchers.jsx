@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./vouchers.css";
 import CardSlider from "../../../components/ui/sliders/cardslider/CardSlider";
+import Error from "../../../components/error/Error";
+import ProductCardLoader from "../../../components/skeleton/ProductCardLoader";
 
-const Vouchers = ({ vouchers }) => {
+const Vouchers = ({ vouchers, isLoading, isError }) => {
+  const [componentName] = useState("Vouchers");
+
+  if (isLoading) {
+    return <ProductCardLoader loadingText={componentName} cardcount={vouchers.length} />;
+  }
+
+  if (isError) {
+    return <Error errorText={componentName} />;
+  }
+
   return (
     <div className="dvVouchers py-5">
       <div className="container-xl">

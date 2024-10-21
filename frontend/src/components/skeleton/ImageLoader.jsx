@@ -4,7 +4,7 @@ import "./skeleton.css";
 const ImageLoader = ({ loadingText }) => {
   return (
     <div className="image-loader d-flex">
-      <h1 className="m-auto heading-semibold">{loadingText} Loading...</h1>
+      <h1 className="m-auto heading-semibold">Loading...</h1>
     </div>
   );
 };

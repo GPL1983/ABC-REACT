@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./redemptionmenu.css";
 import IconCard from "../../../components/ui/iconcard/IconCard";
+import Error from "../../../components/error/Error";
 import RedemptionMenuLoader from "../../../components/skeleton/RedemptionMenuLoader";
 
 const RedemptionMenu = ({ redemptionMenu, isLoading, isError }) => {
@@ -12,7 +13,7 @@ const RedemptionMenu = ({ redemptionMenu, isLoading, isError }) => {
   }
 
   if (isError) {
-    return <ErrorLoader loadingText={componentName} />;
+    return <Error errorText={componentName} />;
   }
 
   return (
